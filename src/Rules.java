@@ -94,7 +94,7 @@ public class Rules {
 
                 for (int n = i - 1; n > 0; n--) {
                     if (dices.get(n).getValue() == dices.get(n - 1).getValue()) {
-                        int result = dices.get(n).getValue() * 2;
+                        int result = (dices.get(n).getValue() * 2 + sum);
                         addToList(result);
                         return result;
                     }
